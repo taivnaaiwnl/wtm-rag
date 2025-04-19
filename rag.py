@@ -12,7 +12,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDKLrXSPRj8zXg6vSCZu-EqaHQXoOCWWbM"
+os.environ["GOOGLE_API_KEY"] = ""
 
 def load_documents(directory_path: str):
     loader = DirectoryLoader(
