@@ -136,3 +136,10 @@ if __name__ == "__main__":
         print(f"\nАсуулт (Query): {query}")
         response = rag_chain.invoke(query)
         print(f"Хариулт (Response): {response}")
+    print("\n\nNow you can ask your own questions. Type 'exit' to end.")
+    while True:
+        user_query = input("\nEnter your question: ")
+        if user_query.lower() == 'exit':
+            break
+        response = rag_chain.invoke(user_query)
+        print(f"Response: {response}")
